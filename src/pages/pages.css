@@ -1,0 +1,645 @@
+.home-page {
+  min-height: 100vh;
+  background-color: #f6f6f6;
+  padding-top: 100px; 
+  display: flex;
+  align-items: center;
+}
+
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.home-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.text-section {
+  padding-left: 2rem;
+}
+
+.welcome-text {
+  font-size: 1rem;
+  color: var(--medium-gray);
+  margin-bottom: 1rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.name-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: var(--black);
+  margin: 0;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: var(--medium-gray);
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+}
+
+.download-cv-btn {
+  background: transparent;
+  border: 2px solid var(--black);
+  color: var(--black);
+  padding: 1rem 2rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.download-cv-btn:hover {
+  background: var(--black);
+  color: white;
+}
+
+.image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 500px;
+  height: 650px;  
+  overflow: hidden;
+  position: relative;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.5); 
+}
+
+
+
+
+/* About Page Styles */
+
+.about-content {
+  display: flex;
+  align-items: center;
+  min-height: 80vh;
+  gap: 60px;
+  padding-top: 120px; 
+}
+
+.about-image {
+  flex: 1;
+  max-width: 500px;
+}
+
+.about-image img {
+  width: 95%;
+  height: 95%;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  filter: saturate(0.5); 
+}
+
+.about-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.about-intro {
+  margin-bottom: 40px;
+}
+
+.about-intro h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.about-intro h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 10px;
+  line-height: 1.1;
+}
+
+.about-intro .subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #7f8c8d;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+
+.about-description {
+  margin-bottom: 50px;
+}
+
+.about-description p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #5a6c7d;
+  margin-bottom: 20px;
+}
+
+.languages-section h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.language-blocks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.language-block {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid;
+  border-left-color: grey;
+}
+
+.language-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+
+.language-symbol {
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.language-block span {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+
+/* Projects Page Styles - Compact */
+.projects-header-compact {
+  text-align: center;
+  padding: 100px 0 0 0;
+}
+
+.projects-title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+
+/* Project Showcase - Compact */
+.project-showcase-compact {
+  position: relative;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.project-container-compact {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+/* Project Image Section - Compact but prominent */
+.project-image-section {
+  flex: 2.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.project-image-compact {
+  width: 100%;
+  height: 400px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-image-compact:hover {
+  transform: scale(1.02);
+}
+
+.project-image-compact img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.5);
+}
+
+/* Project Details - Compact */
+.project-details {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.project-info-compact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-title-compact {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: black;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.project-description-compact {
+  font-size: 1rem;
+  color: #5a6c7d;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Technologies - Compact */
+.technologies-compact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.technologies-compact h4 {
+  font-size: 1rem;
+  color: #2c3e50;
+  margin: 0;
+  font-weight: 600;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-tag {
+  background: white;
+  color: #2c3e50;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Action Button - Compact */
+.project-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.btn-github {
+  background: transparent;
+  border: 2px solid #2c3e50;
+  color: #2c3e50;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-github:hover {
+  background: #2c3e50;
+  color: white;
+}
+
+/* Navigation Arrows */
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 2px solid #2c3e50;
+  color: #2c3e50;
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.left-arrow {
+  left: -60px;
+}
+
+.right-arrow {
+  right: -60px;
+}
+
+.nav-arrow:hover {
+  background: #2c3e50;
+  color: white;
+}
+
+
+/* Gallery Page Styles - Simple */
+.gallery-header-simple {
+  text-align: center;
+  padding: 120px 0 50px 0;
+}
+
+.gallery-title-simple {
+  font-size: 4rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.gallery-subtitle-simple {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+/* Masonry Grid */
+.photo-masonry {
+  padding-bottom: 60px;
+}
+
+.masonry-grid {
+  column-count: 4;
+  column-gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.masonry-item {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.masonry-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.masonry-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+  filter: saturate(0.5);
+  transition: filter 0.3s ease;
+}
+
+.masonry-item:hover img {
+  filter: saturate(1);
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.lightbox-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* ============================================ */
+/*             RESPONSIVE DESIGN               */
+/* ============================================ */
+
+/* Tablet and Mobile Styles */
+@media (max-width: 768px) {
+  /* Home Page */
+  .home-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .text-section {
+    padding-left: 0;
+    order: 2;
+  }
+  
+  .image-section {
+    order: 1;
+  }
+  
+  .name-title {
+    font-size: 2.5rem;
+  }
+  
+  .profile-image {
+    max-width: 400px;
+    height: 500px;
+  }
+
+  /* About Page */
+  .about-content {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .about-intro h1 {
+    font-size: 3rem;
+  }
+  
+  .language-blocks {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-image {
+    max-width: 400px;
+  }
+
+  /* Projects Page */
+  .projects-title {
+    font-size: 2.5rem;
+  }
+  
+  .project-showcase-compact {
+    height: auto;
+    min-height: 60vh;
+  }
+  
+  .project-container-compact {
+    flex-direction: column;
+    gap: 30px;
+    height: auto;
+  }
+  
+  .project-image-section,
+  .project-details {
+    flex: 1;
+  }
+  
+  .project-image-compact {
+    height: 250px;
+  }
+  
+  .project-title-compact {
+    font-size: 1.8rem;
+  }
+  
+  .nav-arrow {
+    display: none;
+  }
+  
+  .project-actions {
+    justify-content: center;
+  }
+
+  /* Gallery Page */
+  .masonry-grid {
+    column-count: 2;
+    column-gap: 15px;
+  }
+  
+  .gallery-title-simple {
+    font-size: 2.5rem;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  /* Home Page */
+  .name-title {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+  
+  .profile-image {
+    max-width: 350px;
+    height: 450px;
+  }
+  
+  .home-container {
+    padding: 0 1rem;
+  }
+
+  /* About Page */
+  .about-intro h1 {
+    font-size: 2.5rem;
+  }
+  
+  .about-intro .subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .language-blocks {
+    gap: 15px;
+  }
+  
+  .language-block {
+    padding: 15px;
+  }
+
+  /* Projects Page */
+  .projects-title {
+    font-size: 2rem;
+  }
+  
+  .project-image-compact {
+    height: 200px;
+  }
+  
+  .tech-tags {
+    justify-content: center;
+  }
+
+  /* Gallery Page */
+  .masonry-grid {
+    column-count: 1;
+  }
+  
+  .gallery-title-simple {
+    font-size: 2rem;
+  }
+}

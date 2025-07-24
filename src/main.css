@@ -1,0 +1,29 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+:root {
+  --white: #ffffff;
+  --light-gray: #f8f8f8;
+  --medium-gray: #666666;
+  --dark-gray: #333333;
+  --black: #000000;
+  --accent: #007acc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--white);
+  font-family: "Trebuchet MS", 'Arial', sans-serif;
+  line-height: 1.6;
+  color: var(--dark-gray);
+}
+
+h1, h2, h3 {
+  color: var(--black);
+  font-weight: 300;
+}

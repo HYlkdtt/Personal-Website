@@ -1,0 +1,157 @@
+.minimal-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: #f6f6f6; 
+  z-index: 1000;
+}
+
+.minimal-nav::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 30px; 
+  right: 30px; 
+  height: 2px;
+  background-color: gray;
+}
+
+.logo-circle {
+  width: 55px;
+  height: 55px;
+  border: 3px solid black; 
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black; 
+  font-weight: bolder;
+  font-size: 1.2rem;
+  font-family: Book Antiqua;
+}
+
+/* Navigation links */
+.minimal-nav-links {
+  display: flex;
+  border-right: 3px solid black; 
+  padding-right: 1.8rem;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.minimal-nav-link {
+  color: black !important; 
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+}
+
+.minimal-nav-link:hover {
+  opacity: 0.7;
+  color: black !important;
+}
+
+/* Social links */
+.social-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.social-link {
+  color: black; 
+  text-decoration: none;
+  font-size: 1rem;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.social-link:hover {
+  opacity: 0.7;
+  color: black; 
+}
+
+.social-link svg {
+  width: 30px;
+  height: 30px;
+}
+
+/* Override Bootstrap defaults */
+.navbar {
+  padding: 0;
+}
+
+.navbar-nav {
+  margin: 0;
+}
+
+.nav-item {
+  margin-bottom: 0;
+}
+
+.nav-link {
+  padding: 0.25rem 0.3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1350px) {
+  .minimal-nav-link {
+    font-size: 0.8rem;
+  }
+  
+  .social-link {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .social-link svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .minimal-nav-link {
+    font-size: 0.75rem;
+  }
+  
+  .social-links {
+    gap: 0.8rem;
+  }
+  
+  .social-column {
+    display: none;
+  }
+
+  .minimal-nav-links {
+    border-right: none;
+    padding-right: 1rem;
+    gap: 1.5rem;
+  }
+  
+  .logo-circle {
+    width: 50px;
+    height: 50px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .minimal-nav-links {
+    gap: 1.2rem;
+    justify-content: space-between;
+  }
+  
+  .minimal-nav-link {
+    font-size: 0.7rem;
+  }
+}
