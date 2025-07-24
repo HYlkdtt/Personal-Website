@@ -12,7 +12,7 @@ function Projects() {
       title: "Regression Line Grapher",
       description: "An interactive web application that allows users to plot data points and visualize regression lines with statistical analysis. NOT FINISHED!!! STILL WORKING ON IT.",
       image: RegressionImage,
-      technologies: ["Python", "Flask", "JavaScript", "HTML/CSS"],
+      technologies: ["Python", "Fast API", "JavaScript", "HTML/CSS"],
       github: "https://github.com/HYlkdtt/regressionLineGrapher",
       features: [
         "Interactive data point plotting",
