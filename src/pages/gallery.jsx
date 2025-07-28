@@ -2,7 +2,6 @@ import './pages.css';
 import { useState } from 'react';
 
 function Gallery() {
-  // Your actual photos - replace with your real photo paths
   const photos = [
     { id: 1, src: "/photos/photo1.jpg", alt: "Photo 1" },
     { id: 2, src: "/photos/photo2.jpg", alt: "Photo 2" },

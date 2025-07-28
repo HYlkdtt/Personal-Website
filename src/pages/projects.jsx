@@ -6,12 +6,11 @@ import ChameleonImage from '../assets/Chatbot.png';
 function Projects() {
   const [currentProject, setCurrentProject] = useState(0);
 
-   // Your projects data
   const projects = [
     {
       id: 1,
       title: "Regression Line Grapher",
-      description: "An interactive web application that allows users to plot data points and visualize regression lines with statistical analysis. NOT FINISHED!!! STILL WORKING ON IT.",
+      description: "An interactive web application that allows users to plot data points and visualize regression lines with statistical analysis.",
       image: RegressionImage,
       technologies: ["Python", "Fast API", "JavaScript", "HTML/CSS"],
       github: "https://github.com/HYlkdtt/regressionLineGrapher",
@@ -27,7 +26,7 @@ function Projects() {
       description: "AI-Powered Style Mimicking Conversational Agent that adapts to different personality styles based on uploaded chat histories.",
       image: ChameleonImage,
       technologies: ["React (Vite)", "FastAPI", "Groq API", "Llama3-8B-8192", "Axios", "Python", "Pydantic", "Uvicorn"],
-      github: "https://github.com/yourusername/chameleon-chatbot", // Replace with actual GitHub URL
+      github: "https://github.com/HYlkdtt/chameleon-chatbot", 
       features: [
         "Real-time style mimicking based on JSON chat histories",
         "Dynamic personality profiling and context-aware responses",
@@ -78,7 +77,7 @@ function Projects() {
               </>
             )}
 
-            {/* Project Image - Takes up more space */}
+            {/* Project Image */}
             <div className="project-image-section">
               <div className="project-image-compact">
                 <img 
