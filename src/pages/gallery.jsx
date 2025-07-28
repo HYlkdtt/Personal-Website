@@ -3,14 +3,14 @@ import { useState } from 'react';
 
 function Gallery() {
   const photos = [
-    { id: 1, src: "/photos/photo1.jpg", alt: "Photo 1" },
-    { id: 2, src: "/photos/photo2.jpg", alt: "Photo 2" },
-    { id: 3, src: "/photos/photo3.jpg", alt: "Photo 3" },
-    { id: 4, src: "/photos/photo4.jpg", alt: "Photo 4" },
-    { id: 5, src: "/photos/photo5.jpg", alt: "Photo 5" },
-    { id: 6, src: "/photos/photo6.jpg", alt: "Photo 6" },
-    { id: 7, src: "/photos/photo7.jpg", alt: "Photo 7" },
-    { id: 8, src: "/photos/photo8.jpg", alt: "Photo 8" },
+    { id: 1, src: "/photos/1.jpg", alt: "Photo 1" },
+    { id: 2, src: "/photos/2.jpg", alt: "Photo 2" },
+    { id: 3, src: "/photos/3.jpg", alt: "Photo 3" },
+    { id: 4, src: "/photos/4.jpg", alt: "Photo 4" },
+    { id: 5, src: "/photos/5.jpg", alt: "Photo 5" },
+    { id: 6, src: "/photos/6.jpg", alt: "Photo 6" },
+    { id: 7, src: "/photos/7.jpg", alt: "Photo 7" },
+    { id: 8, src: "/photos/8.jpg", alt: "Photo 8" },
   ];
 
   const [selectedPhoto, setSelectedPhoto] = useState(null);

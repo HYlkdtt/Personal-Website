@@ -26,7 +26,7 @@ function Projects() {
       description: "AI-Powered Style Mimicking Conversational Agent that adapts to different personality styles based on uploaded chat histories.",
       image: ChameleonImage,
       technologies: ["React (Vite)", "FastAPI", "Groq API", "Axios", "Python"],
-      github: "https://github.com/HYlkdtt/chameleon-chatbot", 
+      github: "https://github.com/HYlkdtt/ChameleonChatBot", 
       features: [
         "Real-time style mimicking based on JSON chat histories",
         "Dynamic personality profiling and context-aware responses",
