@@ -1,11 +1,12 @@
 import './pages.css';
 import { useState } from 'react';
 import RegressionImage from '../assets/RegressionLineGrapher.png';
+import ChameleonImage from '../assets/Chatbot.png';
 
 function Projects() {
   const [currentProject, setCurrentProject] = useState(0);
 
-  // Your projects data
+   // Your projects data
   const projects = [
     {
       id: 1,
@@ -18,6 +19,22 @@ function Projects() {
         "Interactive data point plotting",
         "Real-time regression line calculation",
         "Statistical analysis display"
+      ]
+    },
+    {
+      id: 2,
+      title: "Chameleon ChatBot",
+      description: "AI-Powered Style Mimicking Conversational Agent that adapts to different personality styles based on uploaded chat histories.",
+      image: ChameleonImage,
+      technologies: ["React (Vite)", "FastAPI", "Groq API", "Llama3-8B-8192", "Axios", "Python", "Pydantic", "Uvicorn"],
+      github: "https://github.com/yourusername/chameleon-chatbot", // Replace with actual GitHub URL
+      features: [
+        "Real-time style mimicking based on JSON chat histories",
+        "Dynamic personality profiling and context-aware responses",
+        "Responsive chat interface with file upload functionality",
+        "CORS middleware and secure API key management",
+        "High-performance async request handling",
+        "CI/CD pipelines with GitHub Actions"
       ]
     }
   ];
