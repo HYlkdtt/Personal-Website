@@ -22,7 +22,7 @@ function Gallery() {
         {/* Header */}
         <section className="gallery-header-simple">
           <h1 className="gallery-title-simple">Gallery</h1>
-          <p className="gallery-subtitle-simple">Moments captured through my "Fuji XT30 + 50mm F1.4" Haven't upload the pictures yet, right now its just lorem ipsum of photos</p>
+          <p className="gallery-subtitle-simple">Moments captured through my "Fuji XT30 + 50mm F1.4"</p>
         </section>
 
         {/* Photo Grid */}
