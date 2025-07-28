@@ -25,7 +25,7 @@ function Projects() {
       title: "Chameleon ChatBot",
       description: "AI-Powered Style Mimicking Conversational Agent that adapts to different personality styles based on uploaded chat histories.",
       image: ChameleonImage,
-      technologies: ["React (Vite)", "FastAPI", "Groq API", "Llama3-8B-8192", "Axios", "Python", "Pydantic", "Uvicorn"],
+      technologies: ["React (Vite)", "FastAPI", "Groq API", "Axios", "Python"],
       github: "https://github.com/HYlkdtt/chameleon-chatbot", 
       features: [
         "Real-time style mimicking based on JSON chat histories",
@@ -68,11 +68,15 @@ function Projects() {
             {/* Navigation Arrows */}
             {projects.length > 1 && (
               <>
-                <button className="nav-arrow left-arrow" onClick={prevProject}>
-                  &#8249;
+                <button className="nav-arrow nav-arrow-left" onClick={prevProject}>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
                 </button>
-                <button className="nav-arrow right-arrow" onClick={nextProject}>
-                  &#8250;
+                <button className="nav-arrow nav-arrow-right" onClick={nextProject}>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
                 </button>
               </>
             )}
